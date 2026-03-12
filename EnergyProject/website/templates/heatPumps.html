@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+<div class="container">
+    <div class="containerTitle">
+        <h2>hEAT PUM0S</h2>
+    </div>
+    <div class="containerContent">
+        <div class="containerText">
+            How do heat pumps work?
+            A heat pump uses electricity to provide both heating and cooling to a building. These appliances are efficient at transferring heat from one place to another, depending on where it’s needed.
+
+            ​In the winter, a heat pump provides heating by extracting heat from outside a building and moving it inside. In the summer, it can provide cooling by moving heat from indoors to the outside.
+
+            Find out about the different types of heat pumps, how they work and why they could help to tackle climate change.
+            
+
+            How a heat pump works
+            A heat pump uses the same technology as an air conditioner, which cools your home using a refrigerant. The only major difference between an air-conditioner and a heat pump is that a heat pump has a reversing valve, which allows it to also heat your home.
+
+            In heating mode, a heat pump works like an air conditioner in reverse; instead of keeping your home cool, it uses the refrigerant to warm your home.
+            
+
+            Here’s a step-by-step process of how heat pumps work:
+
+            Image
+            For National Grid's 'How do heat pumps work?' article
+            Heat could be sourced from the air outside or warmth from the ground. This is blown or pumped over the heat exchange surface of the exterior part of the heat pump.
+            
+
+            This heat is warm enough to cause the refrigerant liquid in the heat pump to evaporate and turn into a gas. 
+            
+            This gas is then moved through a compressor, which increases the pressure, causing its temperature to rise.
+            
+            The gas (now heated) is passed over the internal heat exchange surface. This heat can then be either blown around the home's interior or transferred into a central heating or hot water system.
+            
+            As the heat is transferred into the home, the gas falls in temperature, causing it to return to a liquid state.
+            
+            The cycle of reverse refrigeration repeats until your home reaches the required temperature setting on your thermostat.
+            
+            If heat pumps obtain their heat from outside, how do they provide heat on a cold day?
+            Even when it’s very cold outside, some heat energy still exists. Heat pumps are effective at taking this heat energy from the ground or air around a building and using it to provide heat for your home or business.
+
+            For heat pumps to work at their best, it’s also important that the building has good energy efficiency installed, such as effective insulation.
+            
+
+            What different types of heat pumps are there?
+            There are different types of heat pumps: air-source and ground-source.
+
+            Heat pumps can also be paired with fossil fuel gas furnaces; these systems are often referred to as hybrid heat pumps.
+            
+
+            How does an air-source heat pump work?
+            An air-source heat pump takes heat from the air and boosts it to a higher temperature. There are two main types of air-source heat pumps; air-to-water and air-to-air.
+
+            Air-to-water heat pumps take heat from the outside air and feed it into your wet central heating system (similar to existing gas central heating). As the heat produced is cooler than that from a conventional furnace or boiler, you may need to install larger radiators or underfloor heating in your home to make the most of it. Air-to-water heat pumps may be best suited to new-build properties or those that are energy efficient.
+            Air-to-air heat pumps take heat from the outside air and feed it into your home through fans. This type of system can be used for heating but can’t produce hot water.
+            
+            How does a ground-source heat pump work?
+            A ground-source heat pump system harnesses natural heat from underground by pumping liquid through it in pipes. The heat pump then increases the temperature and the heat is used to provide heating or hot water.
+
+            It performs the same role as a furnace or boiler in a central heating system but uses ambient heat from the ground rather than burning fuel to generate heat.
+
+            Ground-source heat pump systems are made up of a ground loop (a network of water pipes buried underground; the larger your home and heating needs, the larger the loop) and a heat pump at ground level.
+
+            A mixture of water and anti-freeze is pumped around the ground loop and absorbs the naturally occurring heat stored in the ground. The water mixture is compressed and goes through a heat exchanger, which extracts the heat and transfers it to the heat pump. The heat is then transferred to your home heating system.
+
+            This heat can then be used in radiators, for hot water or in an underfloor heating system.
+            
+
+            How does a hybrid heat pump work?
+            A hybrid heat pump system, also called a dual energy system, integrates a heat pump (air source or ground source) with your traditional gas furnace or boiler heating system – and potentially even hydrogen boiler in the future.
+
+            A hybrid heating system monitors the temperature outside and automatically chooses the most energy efficient option to keep your home consistently warm and your water hot.
+            
+
+            Why are heat pumps important in helping reach net zero?
+            Around 40% of global emissions come from buildings and most of these result from the ways we heat our homes and businesses.
+
+            To reach net zero carbon emissions and tackle climate change, we need to switch from heating that relies on high-carbon fuels to cleaner, low- or zero-carbon alternatives.
+
+            Heat pumps will help to achieve this for two main reasons:
+
+            Heat pump systems are designed to extract a greater amount of heat energy from the surrounding environment than the energy they consume to create heat. They can produce two to three times more heat output than they consume in electricity input.
+            As more and more electricity is generated from renewable energy sources like solar or wind power, the electricity used to power heat pumps is itself becoming cleaner.
+        </div>
+        <div class="containerImage">
+            <img src="{{ url_for('static', filename='images/heatpumps.jpg')}}" alt="">
+        </div>
+    </div>
+
+</div>
+
+<h2>Card</h2>
+
+<div class="card">
+  <img src="{{ url_for('static', filename='images/heatpumps.jpg')}}" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+
+{% endblock %}

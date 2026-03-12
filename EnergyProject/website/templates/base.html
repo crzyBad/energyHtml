@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename = 'images/solarBatteries.jpg') }}">
+</head>
+<body class="bgc">
+
+    <nav class="navbar">
+        <div class="navLinks">
+            <a href="{{ url_for('index')}}">Home</a>
+            <a href="{{ url_for('booking')}}">Booking</a>
+            <a href="{{ url_for('electricVehicles')}}">Electric Vehicles</a>
+            <a href="{{url_for('energy')}}">Energy</a>
+            <a href="{{ url_for('heatPumps')}}">Heat Pumps</a>
+            <a href="{{ url_for('solarBattery')}}">Solar Battery</a>
+            {% if 'email' in session %}
+                <a href="{{ url_for('logout') }}">Logout</a>
+            {% else %}
+                <a href="{{ url_for('register') }}">Register</a>
+            {% endif %}
+        </div>
+    </nav>
+    
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
+

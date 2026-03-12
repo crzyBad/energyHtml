@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+
+<form class="mainForm" action="{{ url_for('booking') }}" method="POST">
+  <h1>Booking</h1>
+  <div class="formSection">
+    <h2>Choose a date</h2>
+    <input type="date" name="date" required>
+  </div>
+
+  <div class="formSection">
+    <h2>Service type</h2>
+    <select name="bookingType" required>
+      <option value="">— Select —</option>
+      <option value="consultation">Consultation</option>
+      <option value="installation">Installation</option>
+    </select>
+  </div>
+
+  <input type="submit" value="Confirm Booking">
+
+  <div class="formSection">
+    <br>
+    <a href="{{ url_for('bookings') }}">Manage bookings</a>
+  </div>
+
+</form>
+
+
+
+{% if error %}
+  <div class="errorBox">
+    {{ error|safe }}
+  </div>
+{% endif %}
+
+
+
+
+
+{% endblock %}

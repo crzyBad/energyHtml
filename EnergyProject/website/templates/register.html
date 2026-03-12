@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+
+
+<form class="mainForm" action="{{ url_for('register') }}" method="POST">
+    <div class="formSection">
+        <h2>Register</h2>
+        <input type="text" placeholder="Enter name" name="name" required>
+    </div>
+
+    <div class="formSection">
+        <input type="email" placeholder="Enter Email" name="email" required>
+    </div>
+
+    <div class="formSection">
+        <input type="password" placeholder="Enter password" name="password" required>
+        <br><a href="{{ url_for('register')}}">Forgot password</a>
+    </div>
+
+    <div class="formSection">
+        <input type="submit" value="Register">
+        <br>Already have an account?
+        <a href="{{ url_for('logIn')}}">Log in!</a> 
+    </div>
+
+        
+
+
+</form>
+
+
+
+{% endblock %}
+

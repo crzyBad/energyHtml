@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+<div class="container">
+    <p class="containerText">testtestet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt aperiam laboriosam id voluptatibus officiis doloribus. Quia id amet, magni ea distinctio aperiam tempora, laboriosam quae, veniam adipisci nisi pariatur praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, in.
+        <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt aperiam laboriosam id voluptatibus officiis doloribus. Quia id amet, magni ea distinctio aperiam tempora, laboriosam quae, veniam adipisci nisi pariatur praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, in.
+    </p>
+</div>
+
+
+<div class="container">
+    <h3>Energy Cost Calculator</h3>
+    <label>Watts:</label>
+    <input type="number" id="watts" placeholder="e.g. 100">
+    
+    <label>Hours/Day:</label>
+    <input type="number" id="hours" placeholder="e.g. 5">
+    
+    <label>Cost per kWh ($):</label>
+    <input type="number" id="price" placeholder="e.g. 0.12">
+    
+    <button onclick="calculateEnergy()">Calculate</button>
+    <p>Daily Cost: <span id="result">--</span></p>
+</div>
+
+<script>
+    function calculateEnergy() {
+        const watts = document.getElementById('watts').value;
+        const hours = document.getElementById('hours').value;
+        const price = document.getElementById('price').value;
+        const kwh = (watts * hours) / 1000;
+        const cost = kwh * price;
+        document.getElementById('result').innerText = "$" + cost.toFixed(2);
+    }
+</script>
+
+
+
+{% endblock %}

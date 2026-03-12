@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="containerTitle">
+        <h2>Elecric vehicles</h2>
+    </div>
+    <div class="containerContent">
+        <div class="containerText">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim iusto itaque aliquam sunt corporis culpa tempora ducimus maxime perferendis exercitationem? Ex obcaecati minima porro ipsam praesentium aliquam magni dolor dolorum!
+            </p>
+            CARS
+            <p>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ducimus repellat error repellendus, quo, molestias est ratione facere natus, enim iusto sed pariatur. Tempora itaque laborum voluptatem nam a at?
+            </p>
+        </div>
+        <div class="containerImage">
+                <img src="{{ url_for('static', filename='images/car.jpg') }}" alt="image of trains">
+                <img src="{{ url_for('static', filename='images/car2.jpg')}}" alt="image of a train">
+        </div>
+
+            </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

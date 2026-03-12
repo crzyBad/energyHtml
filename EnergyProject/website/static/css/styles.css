@@ -1,0 +1,270 @@
+.bgc {
+    background-image: url(/static/images/bg3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(
+        to bottom,
+        rgba(120, 190, 235, 0.95),
+        rgba(80, 160, 220, 0.95)
+    );
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow:
+        0 8px 20px rgba(0, 120, 200, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.navbar .navLinks a {
+    color: #0b1f33;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 25px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navLinks a:hover {
+    background: rgba(255, 255, 255, 0.35);
+    color: #003a5f;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.container {
+    background: rgba(130, 170, 230, 0.88);
+    border-radius: 25px;
+    margin: 150px auto 40px auto;
+    max-width: 1500px;
+    padding: 40px 30px;
+    backdrop-filter: blur(6px);
+    box-shadow:
+        0 15px 40px rgba(0, 80, 160, 0.35),
+        inset 0 0 25px rgba(255, 255, 255, 0.25);
+}
+
+.container .containerContent {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.container .containerText {
+    color: #0b1f33;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    padding: 20px 30px;
+    flex: 1;
+    font-family: "Segoe UI", Calibri, Tahoma, sans-serif;
+}
+
+.container .containerImage {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    padding: 10px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+}
+
+.container .containerImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow:
+        0 10px 25px rgba(0, 60, 140, 0.35),
+        inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Forms */
+
+form.mainForm {
+    background: rgba(130, 170, 230, 0.9);
+    color: #0b1f33;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: "Segoe UI", Calibri, sans-serif;
+    backdrop-filter: blur(5px);
+    box-shadow:
+        0 12px 30px rgba(0, 90, 180, 0.35),
+        inset 0 0 20px rgba(255, 255, 255, 0.25);
+    margin: 150px auto 40px auto ;
+    padding: 20px 30px;
+    max-width: 300px;
+}
+
+form.mainForm a {
+    text-decoration: none;
+    color: #1b4e81;
+}
+
+
+form.mainForm input {
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+
+
+form.mainForm input[type="submit"] {
+    background: linear-gradient(to bottom, #9ad7f5, #5eb6e8);
+    color: #003a5f;
+    border-radius: 20px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow:
+        0 6px 15px rgba(0, 120, 200, 0.4),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+form.mainForm input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 10px 25px rgba(0, 140, 220, 0.5);
+}
+
+
+form.mainForm a:hover {
+    color: #85cfee;
+}
+
+
+.pageTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 120px;
+    color: #0b1f33;
+    font-family: "Segoe UI", Calibri, sans-serif;
+}
+
+.pageSubtitle {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #1a3f66;
+    font-size: 1.1rem;
+}
+
+.formSection {
+    margin-bottom: 25px;
+}
+
+form.mainForm label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form.mainForm select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.12);
+}
+
+.formFooter {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.errorBox {
+    background: rgba(255, 200, 200, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    color: #6b0000;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+ 
+  .tableWrapper {
+    margin: 120px auto 40px auto;
+    max-width: 900px;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(130, 170, 230, 0.88);
+    backdrop-filter: blur(6px);
+    box-shadow:
+        0 15px 40px rgba(0, 80, 160, 0.35),
+        inset 0 0 25px rgba(255, 255, 255, 0.25);
+}
+
+.bookingTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Segoe UI", Calibri, sans-serif;
+    font-size: 1.05rem;
+    color: #0b1f33;
+}
+
+.bookingTable th {
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.45),
+        rgba(255,255,255,0.25)
+    );
+}
+
+
+.bookingTable td {
+    padding: 14px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.bookingTable tr:last-child td {
+    border-bottom: none;
+}
+
+.bookingTable tbody tr {
+    transition: background 0.3s ease;
+}
+
+.bookingTable tbody tr:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.containerText,
+.bookingTable,
+form.mainForm {
+    text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+}
+
+.titleText {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 120px;
+    color: #0b1f33;
+    font-family: "Segoe UI", Calibri, sans-serif;
+}
+
+.emptyState {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
